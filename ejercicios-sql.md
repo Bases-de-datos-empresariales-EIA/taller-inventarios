@@ -15,6 +15,14 @@
 7. Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
     - 
 8. Calcular el total de compras realizadas por cada centro de costos para el proveedor Almacén RopaViva en el 2023.
+9. Calcular el mes del 2023 con más compras.
+10. Calcular el top 3 de proveedores a los que más se les ha comprado en el 2024.
+11. Calcular el valor de la órden de compra más cara para cada proveedor.
+12. Calcular el top 3 de proveedores a los que más se les ha comprado durante el 2024.
+13. ¿Cuáles son los 5 centros de costos con compras, en promedio, más altas?
+14. ¿Cuáles son los 5 proveedores más baratos en promedio del 2023?
+15. ¿Cuáles son los 3 proveedores a los que más se les compró en enero del 2024?
+
 
 
 
