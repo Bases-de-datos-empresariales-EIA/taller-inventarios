@@ -8,6 +8,9 @@
     - Fresh Organics, CC-1001
 4. ¿Cuál es el proveedor al que se le ha pagado la orden de compra más cara en el centro de costos CC-1001? ¿Cuál fue el valor de esa OC y en qué fecha se dio?
     - Active Wear, 14 de febrero del 2013, $49.974.748
+5. ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
+    - 2.453.082.256
+6. Calcular el total de compras realizadas en cada centro de costos en el 2024.
 
 
 

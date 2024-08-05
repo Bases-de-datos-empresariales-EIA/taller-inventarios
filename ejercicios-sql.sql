@@ -40,3 +40,13 @@ from inventarios."OrdenDeCompra" oc
 where cc.codigo = ' CC-1001'
 order by oc.total desc
 limit 1;
+
+-- ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
+select 
+cc.codigo,
+sum(oc.total)
+from inventarios."CentroDeCostos" cc
+  join inventarios."OrdenDeCompra" oc
+    on oc."centroDeCostosId" = cc.id
+where cc.codigo = ' CC-1002'
+group by cc.codigo;
