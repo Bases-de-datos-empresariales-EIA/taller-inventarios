@@ -1,29 +1,23 @@
 # Ejercicios SQL
 
 1. ¿Cuál es el primer proveedor con el que se negoció?
-    - ProTech Solutions
+   - ProTech Solutions
 2. ¿Cuál es la orden de compra más grande?
-    - OC406
+   - OC406
 3. ¿A qué proveedor se le compró la primera orden de compra del 2024? Adicionalmente, ¿en qué centro de costos se cargó esa OC?
-    - Fresh Organics, CC-1001
+   - Fresh Organics, CC-1001
 4. ¿Cuál es el proveedor al que se le ha pagado la orden de compra más cara en el centro de costos CC-1001? ¿Cuál fue el valor de esa OC y en qué fecha se dio?
-    - Active Wear, 14 de febrero del 2013, $49.974.748
+   - Active Wear, 14 de febrero del 2013, $49.974.748
 5. ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
-    - 2.453.082.256
+   - 2.453.082.256
 6. Calcular el total de compras realizadas en cada centro de costos en el 2024.
-    - 
-7. Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
-    - 
+   ![Punto 6](./resultados/6.png 'Resultado punto 6')
+7. ## Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
 8. Calcular el total de compras realizadas por cada centro de costos para el proveedor Almacén RopaViva en el 2023.
 9. Calcular el mes del 2023 con más compras.
 10. Calcular el top 3 de proveedores a los que más se les ha comprado en el 2024.
-11. Calcular el valor de la órden de compra más cara para cada proveedor.
-12. Calcular el top 3 de proveedores a los que más se les ha comprado durante el 2024.
+11. Calcular el valor de la orden de compra más cara para cada proveedor.
+12. Calcular los 3 de centros de costos que menos se usaron durante el 2021.
 13. ¿Cuáles son los 5 centros de costos con compras, en promedio, más altas?
 14. ¿Cuáles son los 5 proveedores más baratos en promedio del 2023?
 15. ¿Cuáles son los 3 proveedores a los que más se les compró en enero del 2024?
-
-
-
-
-
