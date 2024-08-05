@@ -50,3 +50,15 @@ from inventarios."CentroDeCostos" cc
     on oc."centroDeCostosId" = cc.id
 where cc.codigo = ' CC-1002'
 group by cc.codigo;
+
+-- Calcular el total de compras realizadas en cada centro de costos en el 2024.
+
+select 
+cc.codigo,
+sum(oc.total)
+from inventarios."CentroDeCostos" cc
+  join inventarios."OrdenDeCompra" oc
+    on oc."centroDeCostosId" = cc.id
+where fecha >= '2024-01-01'
+group by cc.codigo
+order by sum(oc.total) desc;

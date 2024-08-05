@@ -11,6 +11,9 @@
 5. ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
     - 2.453.082.256
 6. Calcular el total de compras realizadas en cada centro de costos en el 2024.
+    - 
+7. Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
+    - 
 
 
 
