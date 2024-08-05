@@ -14,6 +14,7 @@
     - 
 7. Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
     - 
+8. Calcular el total de compras realizadas por cada centro de costos para el proveedor Almacén RopaViva en el 2023.
 
 
 

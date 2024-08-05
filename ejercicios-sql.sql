@@ -62,3 +62,16 @@ from inventarios."CentroDeCostos" cc
 where fecha >= '2024-01-01'
 group by cc.codigo
 order by sum(oc.total) desc;
+
+-- Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
+select 
+t.nombre,
+sum(oc.total)
+from inventarios."OrdenDeCompra" oc
+  join inventarios."Tercero" t
+    on oc."terceroId" = t.id
+  join inventarios."CentroDeCostos" cc
+    on oc."centroDeCostosId" = cc.id
+where oc.fecha>'2024-01-01' and cc.codigo = ' CC-1003'
+group by t.nombre
+order by sum(oc.total) desc;
