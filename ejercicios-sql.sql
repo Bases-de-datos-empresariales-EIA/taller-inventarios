@@ -143,4 +143,28 @@ from inventarios."OrdenDeCompra" oc
     on oc."centroDeCostosId" = cc.id
 group by cc.codigo
 order by avg(oc.total) desc
-limit 5
+limit 5;
+
+-- 14. ¿Cuáles son los 5 proveedores más baratos en promedio del 2023?
+select 
+t.nombre,
+avg(oc.total)
+from inventarios."OrdenDeCompra" oc
+  join inventarios."Tercero" t
+    on oc."terceroId" = t.id
+where extract(year from oc.fecha) = 2023
+group by t.nombre
+order by avg(oc.total) asc
+limit 5;
+
+-- 15. ¿Cuáles son los 3 proveedores a los que más se les compró en enero del 2024?
+select 
+t.nombre,
+sum(oc.total)
+from inventarios."OrdenDeCompra" oc
+  join inventarios."Tercero" t
+    on oc."terceroId" = t.id
+where extract(year from oc.fecha) = 2024 and extract(month from oc.fecha) = 1
+group by t.nombre
+order by sum(oc.total) desc
+limit 3;
