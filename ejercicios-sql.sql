@@ -26,3 +26,17 @@ from inventarios."OrdenDeCompra" oc
 where oc.fecha > '2024-01-01'
 order by oc.fecha asc
 limit 1;
+
+-- ¿Cuál es el proveedor al que se le ha pagado la orden de compra más cara en el centro de costos CC-1001? ¿Cuál fue el valor de esa OC y en qué fecha se dio?
+select 
+t.nombre,
+oc.fecha,
+oc.total
+from inventarios."OrdenDeCompra" oc
+  join inventarios."CentroDeCostos" cc
+    on oc."centroDeCostosId" = cc.id
+  join inventarios."Tercero" t
+    on oc."terceroId" = t.id
+where cc.codigo = ' CC-1001'
+order by oc.total desc
+limit 1;
