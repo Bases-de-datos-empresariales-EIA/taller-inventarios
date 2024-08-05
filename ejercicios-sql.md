@@ -11,8 +11,8 @@
 5. ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
    - 2.453.082.256
 6. Calcular el total de compras realizadas en cada centro de costos en el 2024.
-   ![Punto 6](./resultados/6.png 'Resultado punto 6')
-7. ## Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
+   - ![Punto 6](./resultados/6.png 'Resultado punto 6')
+7. Calcular el total de compras realizadas por cada proveedor en el centro de costos CC-1003 en el año 2024.
 8. Calcular el total de compras realizadas por cada centro de costos para el proveedor Almacén RopaViva en el 2023.
 9. Calcular el mes del 2023 con más compras.
 10. Calcular el top 3 de proveedores a los que más se les ha comprado en el 2024.
