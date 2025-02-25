@@ -72,19 +72,38 @@ order by fecha desc
 limit 1
 
 
--- 4. ¿Cuál es el proveedor al que se le ha pagado la orden de compra más cara en el centro de costos CC-1001? ¿Cuál fue el valor de esa OC y en qué fecha se dio?
+---------------- punto 4
+
+-- ¿Cuál es el proveedor al que se le ha pagado la orden de compra más cara en el centro de costos CC-1001? 
+-- ¿Cuál fue el valor de esa OC y en qué fecha se dio?
 select 
-t.nombre,
+oc.codigo,
+oc.total,
 oc.fecha,
-oc.total
-from inventarios."OrdenDeCompra" oc
-  join inventarios."CentroDeCostos" cc
-    on oc."centroDeCostosId" = cc.id
-  join inventarios."Tercero" t
-    on oc."terceroId" = t.id
-where cc.codigo = ' CC-1001'
+t.nombre
+from "Tercero" t
+	join "OrdenDeCompra" oc
+		on oc."terceroId" = t.id
+	join "CentroDeCostos" cc
+		on oc."centroDeCostosId" = cc.id
+where cc.codigo = 'CC-1001'
 order by oc.total desc
-limit 1;
+limit 1
+
+-- ¿Cuál es el proveedor al que se le ha pagado la orden de compra más barata en el centro de costos CC-1002? 
+-- ¿Cuál fue el valor de esa OC y en qué fecha se dio?
+select 
+oc.total,
+oc.fecha,
+t.nombre
+from "Tercero" t
+	join "OrdenDeCompra" oc
+		on oc."terceroId" = t.id
+	join "CentroDeCostos" cc
+		on oc."centroDeCostosId" = cc.id
+where cc.codigo = 'CC-1002'
+order by oc.total asc
+limit 1
 
 -- 5. ¿Cuál es el total de compras realizadas en el centro de costos CC-1002?
 select 
